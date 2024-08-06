@@ -6,9 +6,10 @@ import { useNavigate } from 'react-router-dom';
 function QuestionPage() {
     const navigate = useNavigate();
 
-    const handleSubmit = async (preference) => {
+    const handleSubmit = async (team) => {
         try {
-            const response = await axios.post('localhost:3000/team', { preference });
+            const email = localStorage.getItem('email');
+            const response = await axios.patch('/api/v1/members', { team, email});
             if (response.status === 200) {
                 navigate('/main');
             } else {
