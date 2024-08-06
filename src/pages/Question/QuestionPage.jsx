@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 function QuestionPage() {
     const navigate = useNavigate();
 
-    const handleSubmit() {
+    const handleSubmit = async (preference) => {
         try {
             const response = await axios.post('localhost:3000/team', { preference });
             if (response.status === 200) {
