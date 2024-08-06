@@ -10,7 +10,7 @@ function InfoPage() {
     }
 
     return (
-        <div className="container">
+        <div className="infopage-container">
             <div className="exit-button" onClick={handleExit}>
                 <img src="/images/out.png" alt="Exit" />
             </div>
