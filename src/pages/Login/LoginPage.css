@@ -1,15 +1,3 @@
-.header {
-    width: 390px;
-    height: 70px;
-    text-align: center;
-    margin: 0 auto;
-
-    h1 {
-        color: #F7A09F;
-    }
-
-}
-
 .container {
     width: 390px;
     height: 80vh;
@@ -35,7 +23,7 @@
     }
 
     input {
-        border: 2px solid #D9D9D9;
+        border: 2px solid #F7A09F;
         border-radius: 10px;
         padding-left: 10px;
         margin-bottom: 15px;
@@ -52,6 +40,10 @@
         color: white;
         width: 266px;
         height: 44px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #F98F8E;
     }
 
     p {

@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
-import './LoginPage.css';
+import './QuestionPage.css';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 function LoginPage() {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
     const navigate = useNavigate();
 
+    /*
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
@@ -21,7 +20,7 @@ function LoginPage() {
         } catch (error) {
             console.error('로그인 중 에러 발생: ', error);
         }
-    }
+    }*/
 
     return (
         <>
@@ -47,6 +46,7 @@ function LoginPage() {
                     </form>
                 </div>
             </div>
+        
         </>
     )
 }

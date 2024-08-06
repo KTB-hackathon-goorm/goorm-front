@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header/Header'
 import LoginPage from './pages/Login/LoginPage';
 //import Main from './pages/Main';
 //import Question from './pages/Question';
@@ -8,7 +9,7 @@ import LoginPage from './pages/Login/LoginPage';
 function App() {
   return (
     <Router>
-      {/* <Header /> 헤더 만들고 처리 */}
+      <Header />
       <Routes>
         <Route path="/" element={<LoginPage />} />
       </Routes>
