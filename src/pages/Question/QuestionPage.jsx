@@ -3,7 +3,7 @@ import './QuestionPage.css';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
-function LoginPage() {
+function QuestionPage() {
     const navigate = useNavigate();
 
     /*
@@ -25,25 +25,20 @@ function LoginPage() {
     return (
         <>
             <div className="container">
-                <div className="input-container">
-                    <form onSubmit={handleSubmit}>
-                        <h2>로그인</h2>
-                        <input
-                            type="email"
-                            placeholder="이메일"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                        />
-                        <input
-                            type="password"
-                            placeholder="비밀번호"
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
-                        />
-                        <button
-                            type='submit'
-                        >로그인</button>
-                    </form>
+                <div className="text-container">
+                    <h1>오늘의 질문</h1>
+                    <p>파인애플 피자 호? 불호?</p>
+                </div>
+                <div className="button-container">
+                    <div className="left-button">
+
+
+                    </div>
+
+
+                    <div className="right-button">
+                        
+                    </div>
                 </div>
             </div>
         
@@ -51,4 +46,4 @@ function LoginPage() {
     )
 }
 
-export default LoginPage;
+export default QuestionPage;
