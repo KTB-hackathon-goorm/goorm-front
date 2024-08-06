@@ -10,8 +10,11 @@ function LoginPage() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+
+        localStorage.setItem('email', email);
+
         try {
-            const response = await axios.post('/login', { email, password });
+            const response = await axios.post('/api/v1/sign-in', { email, password });
             if (response.status === 200) {
                 navigate('/question');
             } else {
