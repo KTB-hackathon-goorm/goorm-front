@@ -31,6 +31,11 @@ function MainPage() {
         navigate('/record');
     };
 
+    const handleMapClick = () => {
+        navigate('/plogging');
+    };
+
+
     return (
         <div className="container">
             <div className="info-container">
@@ -48,7 +53,7 @@ function MainPage() {
                     <h2>Team 불호</h2>
                 </div>
                 <div className="map">
-                    <img src="/images/map.png" alt="지도" className="map-image" />
+                    <img src="/images/map.png" alt="지도" className="map-image" onClick={handleMapClick} />
                     <img src="/images/location.png" alt="위치 아이콘" className="location-icon" />
                 </div>
                 <h3 className="point">포인트: 10000</h3>
