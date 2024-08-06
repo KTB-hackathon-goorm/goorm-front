@@ -38,7 +38,7 @@ function MainPage() {
 
     return (
         <div className="container">
-            <div className="info-container">
+            <div className="info-container2">
                 <button className='info-button' onClick={handleInfoClick}>
                     <h5>i</h5>
                 </button>
