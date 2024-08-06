@@ -27,17 +27,16 @@ function QuestionPage() {
             <div className="container">
                 <div className="text-container">
                     <h1>오늘의 질문</h1>
-                    <p>파인애플 피자 호? 불호?</p>
+                    <h2>파인애플 피자 호? 불호?</h2>
                 </div>
                 <div className="button-container">
                     <div className="left-button">
-
-
+                        <img src="../../../images/bong.png" alt="봉이"/>
+                        <h3>호</h3>
                     </div>
-
-
                     <div className="right-button">
-                        
+                        <img src="../../../images/harr.png" alt="하르" />
+                        <h3>불호</h3>
                     </div>
                 </div>
             </div>
