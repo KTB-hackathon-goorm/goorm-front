@@ -18,7 +18,7 @@ export default function PloggingPage() {
     }
 
     return (
-        <>
+        <div className="container">
             <div className="map">
                 <KakaoMap />
                 <div className="timer">
@@ -28,6 +28,6 @@ export default function PloggingPage() {
                 </div>
                 <button className="finish" onClick={handleFinish}>끝내기</button>
             </div>
-        </>
+        </div>
     )
 }
