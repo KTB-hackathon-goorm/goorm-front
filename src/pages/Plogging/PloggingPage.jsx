@@ -23,7 +23,7 @@ export default function PloggingPage() {
     }
 
     return (
-        <>
+        <div className="container">
             <div className="map">
                 <KakaoMap />
                 <div className="timer">
@@ -40,6 +40,6 @@ export default function PloggingPage() {
                     </Box>
                 </Modal>
             </div>
-        </>
+        </div>
     )
 }
