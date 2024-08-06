@@ -18,7 +18,6 @@
     }
 }
 
-
 .button-container {
     display: flex;
     flex-direction: row;
@@ -39,6 +38,9 @@
         margin-top: 10px;
         width: 120px;
     }
+    hover {
+        background-color: #FFBCBF;
+    }
 }
 
 .right-button {
@@ -54,5 +56,8 @@
     img {
         margin-top: 10px;
         width: 120px;
+    }
+    hover {
+        background-color: #A3CEE9;
     }
 }
