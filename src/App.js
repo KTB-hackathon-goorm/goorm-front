@@ -9,6 +9,7 @@ import InfoPage from './pages/Info/InfoPage';
 import PloggingPage from './pages/Plogging/PloggingPage';
 import PostPage from './pages/Post/PostPage';
 import RecordPage from './pages/Record/RecordPage';
+import BoardCard from './pages/Board/BoardPage.jsx';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/plogging" element={<PloggingPage />} />
         <Route path="/post" element={<PostPage />} />
         <Route path="/record" element={<RecordPage />} />
+        <Route path="/board" element={<BoardCard />} />
       </Routes>
     </Router>
 

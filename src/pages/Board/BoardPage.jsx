@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import './BoardPage.css';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import BoardCard from '../../components/Board/BoardCard';
 
 function BoardPage() {
     const navigate = useNavigate();
@@ -26,18 +27,8 @@ function BoardPage() {
 
     return (
         <>
-            <div className="container">
-                <div className="container-top">
-                    <div className="user-profile">
-                        <img />
-                        <h5>user name</h5>
-                    </div>
-                    <h5></h5>
-                </div>
-
-                <div className="input-container">
-
-                </div>
+            <div className='posts'>
+                <BoardCard />
             </div>
         </>
     )
