@@ -14,9 +14,9 @@ export default function RecordCard({data}) {
                         {data.win ? <div className="win">승리</div> : <div className="lose">패배</div>}
                     </div>
                     <div className="row2">
-                        <div className="yes">불가능</div>
-                        <span>{data.yes}:{data.no}</span>
-                        <div className="no">가능</div>
+                        <div className="no">불가능</div>
+                        <span>{data.yes} : {data.no}</span>
+                        <div className="yes">가능</div>
                     </div>
                 </div>
             </div>
