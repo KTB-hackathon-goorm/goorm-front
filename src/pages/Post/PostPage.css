@@ -1,0 +1,56 @@
+.postBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.postInner {
+    display: flex;
+    width: 390px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.title {
+    margin-bottom: 10px;
+}
+.upload {
+    width: 340px;
+    height: 200px;
+    opacity: 0;
+}
+.upload-label {
+    width: 340px;
+    height: 200px;
+    background-image: url("/public/images/imageUpload.png");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer; /* 마우스 포인터를 버튼처럼 보이게 합니다. */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.uploadText {
+    width: 340px;
+    height: 200px;
+    border: solid;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: auto;
+    resize: none;
+    vertical-align: top;
+    margin-top: 10px;
+
+}
+.uploadButton {
+    width: 150px;
+    height: 47px;
+    border-radius: 10px;
+    border: 0;
+    background-color: #F7A09F;
+    color: white;
+    margin-top: 20px
+}
