@@ -1,6 +1,5 @@
 .container {
     width: 390px;
-    height: 80vh;
     margin: 0 auto;
     display: flex;  
     flex-direction: column;  
@@ -8,11 +7,11 @@
 
 .input-container {
     text-align: center;
-    margin: auto; 
+    margin: auto;
+    margin-top: 150px;
     width: 330px;
     height: 278px;
     border-radius: 20px;
-    
     background-color: #FEE5E4;
     display: flex;
     flex-direction: column;
