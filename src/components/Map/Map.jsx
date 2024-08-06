@@ -15,7 +15,7 @@ export default function KakaoMap() {
 
     const getBinMap = useCallback(async (latitude, longitude, zoomLevel) => {
         try {
-            const response = await axios.get(`https://api.commitmate-dev.kro.kr/api/v1/bin?latitude=${latitude}&longitude=${longitude}&zoomLevel=${zoomLevel}`);
+            const response = await axios.get(`/api/v1/bin?latitude=${latitude}&longitude=${longitude}&zoomLevel=${zoomLevel}`);
             const newData = response.data.filter(newItem => !arrayMap.some(existingItem => existingItem.id === newItem.id));
             setArrayMap(prevArrayMap => [...prevArrayMap, ...newData]);
         } catch (error) {
