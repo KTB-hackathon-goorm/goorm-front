@@ -32,8 +32,8 @@
     flex-direction: row;
     align-items: center;
 }
-.no {
-    width: 80px;
+.yes {
+    width: 90px;
     height: 27px;
     background-color: #9FDBF7;
     color: white;
@@ -44,9 +44,10 @@
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    font-weight: 700;
 }
-.yes {
-    width: 80px;
+.no {
+    width: 90px;
     height: 27px;
     background-color: #F7A09F;
     color: white;
@@ -57,9 +58,10 @@
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    font-weight: 700;
 }
 .win {
-    width: 49px;
+    width: 55px;
     height: 27px;
     display: flex;
     flex-direction: column;
@@ -68,6 +70,7 @@
     background-color: #4667F9;
     color: white;
     border-radius: 5px;
+    font-weight: 700;
 }
 .lose {
     width: 49px;
@@ -79,4 +82,5 @@
     background-color: #F94846;
     color: white;
     border-radius: 5px;
+    font-weight: 700;
 }
