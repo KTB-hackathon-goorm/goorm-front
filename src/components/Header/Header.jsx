@@ -1,7 +1,13 @@
 import React from 'react';
 import './Header.css';
+import { useNavigate } from 'react-router-dom';
 
 function Header() {
+    const navigate = useNavigate();
+    const handleLogoClick = () => {
+        navigate('/main');
+    }
+
     return (
         <>
             <div className="header">
