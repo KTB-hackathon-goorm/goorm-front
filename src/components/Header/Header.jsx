@@ -10,7 +10,7 @@ function Header() {
 
     return (
         <>
-            <div className="header">
+            <div className="header" onClick={handleLogoClick}>
                 <h1>BONGGU</h1>
             </div>
             <div className="divider-container">
