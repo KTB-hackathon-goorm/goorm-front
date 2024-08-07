@@ -16,10 +16,12 @@ export default function PostPage() {
             <div className="postBox">
                 <div className="postInner">
                     <h2 className="title">인증하기</h2>
-                    <label htmlFor="file-upload" className="upload-label">
-                        <input type="file" id="file-upload" className="upload" onChange={handleImageUpload} />
-                        <img src={preview} alt="Preview" className="preview-img" />
-                    </label>
+                    <div className="upload-box">
+                        <label htmlFor="file-upload" className="upload-label">
+                            <input type="file" id="file-upload" className="upload" onChange={handleImageUpload} />
+                            <img src={preview} alt="Preview" className="preview-img" />
+                        </label>
+                    </div>
                     <textarea className="uploadText"></textarea>
                     <button className="uploadButton">올리기</button>
                 </div>

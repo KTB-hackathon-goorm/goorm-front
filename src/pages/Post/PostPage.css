@@ -18,11 +18,19 @@
 .upload {
     width: 340px;
     height: 200px;
-    opacity: 0;
+    display: none;
 }
+
 .preview-img {
-    width: 340px;
-    height: 200px;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .upload-label {
     width: 340px;
@@ -37,9 +45,10 @@
     border-radius: 10px;
 }
 .uploadText {
+    margin: 10px;
     width: 340px;
     height: 200px;
-    border: solid;
+    border: 1px solid #e6e6e6;
     border-radius: 10px;
     padding: 10px;
     box-sizing: border-box;
@@ -56,5 +65,10 @@
     border: 0;
     background-color: #F7A09F;
     color: white;
-    margin-top: 20px
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.uploadButton:hover {
+    background-color: #f98f8e;
 }
