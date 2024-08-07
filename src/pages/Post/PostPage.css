@@ -20,6 +20,10 @@
     height: 200px;
     opacity: 0;
 }
+.preview-img {
+    width: 340px;
+    height: 200px;
+}
 .upload-label {
     width: 340px;
     height: 200px;
