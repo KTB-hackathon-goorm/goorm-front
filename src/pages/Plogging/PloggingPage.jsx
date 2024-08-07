@@ -1,11 +1,12 @@
 import React, { useRef, useState } from "react";
-
+import { useNavigate } from 'react-router-dom';
 import "./PloggingPage.css";
 import KakaoMap from "../../components/Map/Map";
 import Timer from "../../components/Map/Timer";
 import { Box, Button, Typography, Modal } from "@mui/material";
 
 export default function PloggingPage() {
+    const navigate = useNavigate();
     const [isOpen, setIsOpen] = useState(false);
     const timeRef = useRef(null);
 
@@ -18,7 +19,7 @@ export default function PloggingPage() {
             const totalMinutes = time.hour * 60 + time.min + Math.floor(time.sec / 60);
             const quotient = Math.floor(totalMinutes / 10);
             console.log(quotient);
-
+            navigate('/post');
         }
     }
 
