@@ -1,3 +1,12 @@
+.boardPage {
+    background-color: white;
+    width: 390px;
+    height: 900px;
+    margin: 0 auto;
+    display: flex;  
+    flex-direction: column;  
+}
+
 .posts {
     display: flex;
     flex-direction: column;

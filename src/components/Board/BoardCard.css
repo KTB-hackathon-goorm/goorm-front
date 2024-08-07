@@ -19,7 +19,6 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: skyblue;
 }
 .writer {
     margin: 15px;
@@ -28,12 +27,15 @@
     margin-left: 68px;
 }
 .postImage{
+    margin: 10px;
     background-color: grey;
-    width: 355px;
-    height: 355px;
+    width: 330px;
+    height: auto;
+    border-radius: 10px;
 }
 .postText {
-    width: 355px;
+    width: 330px;
     margin-left: 20px;
     margin-top: 10px;
+    margin-bottom: 40px;
 }
